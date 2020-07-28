@@ -144,9 +144,9 @@ class Render(object):
         f.write(dword(0))
 
         # pixel data
-        for x in range(self.width):
-            for y in range(self.height):
-                f.write(self.framebuffer[y][x])
+        for x in range(self.height):
+            for y in range(self.width):
+                f.write(self.framebuffer[x][y])
 
         f.close()
 
